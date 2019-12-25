@@ -24,19 +24,19 @@
 //  THE SOFTWARE.
 
 
-// swift-tools-version:5.1
+// swift-tools-version:5.0
 import PackageDescription
 
 let package = Package(
     name: "FSPagerView",
     platforms: [
-      .iOS(.v8)
+        .iOS(.v8),
+        .tvOS(.v9)
     ],
     products: [
         .library(name: "FSPagerView", targets: ["FSPagerView"]),
     ],
     dependencies : [],
-    exclude: [],
     targets: [
         .target(
             name: "FSPagerView",
